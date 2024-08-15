@@ -36,73 +36,6 @@
 
 
 <body>
-    <!-- <header>
-        <h1>Kalkulator BMI</h1>
-    </header>
-
-    <main> 
-        <aside>
-            <article>
-                 <p></p>
-            </article>
-
-            <form>
-                <div>
-                   <h3>Jenis Kelamin:<h3>
-                   <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
-                   <label for="laki-laki">Laki-Laki</label>
-                   <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
-                   <label for="perempuan">Perempuan</label>
-                <div>
-    
-                <div>
-                    <h3>Berat badan (kg)</h3>
-                    <input type="number">
-                </div>
-    
-                <div>
-                    <h3>Usia (tahun)</h3>
-                    <input type="number">
-                </div>
-    
-                <div>
-                    <h3>Tinggi badan (cm)</h3>
-                    <input type="number">
-                </div>
-               
-                <div class="form-btn-container">
-                    <button class="button bg-hitungBMI">Hitung BMI</button>
-                    <button class="button bg-reset">Reset</button>
-                </div>
-            </form>
-    
-            <article>
-                <header>
-                    <h2></h2>
-                </header>
-                <p><p>
-        
-            </article>
-        </aside>
-
-
-
-        <aside>
-            <section>
-                <article>
-                    <p></p>
-                </article>
-            </section>
-        </aside>
-
-    
-
-    </main>
-
-    <footer>
-        <p>Made By: Muhammad Rafi Novandi</p>
-    </footer> -->
-
 <!----------------------------------Judul--------------------------------------->
    <div class="container">
         <div class="row">
@@ -110,56 +43,29 @@
             <h1>Kalkulator BMI</h1>
           </div>
         </div>
-<!----------------------------------Kalkulator BMI--------------------------------------->
-        <div class="row">
-          <div class="sidebar">
-            <div>
-                <h3 style="
-                margin-top: 10px;
-                margin-bottom: 15px;
-
-                ">Jenis Kelamin:<h3>
-                <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
-                <label for="laki-laki">Laki-Laki</label>
-                <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
-                <label for="perempuan">Perempuan</label>
+          <div class="kotak">
+            <div class="input">
+                <lebel for="weight">Berat badan (Kg)</lebel>
+                <input type="number" id="weight">
             </div>
-
-            <div style="
-            align-items: safe;
-            margin-top: 25px;
-            ">
-                <h3>Berat badan (kg)</h3>
-                <input type="number">
+            <div class="input">
+                <lebel for="height">Tinggi badan (Cm)</lebel>
+                <input type="number" id="height">
             </div>
-
-            <div style="margin-top: 20px;">
-                <h3>Usia (tahun)</h3>
-                <input type="number">
+            <div style="position: absolute;"> 
+                <button id="calculate">Hitung BMI</button>
             </div>
-
-            <div style="margin-top: 20px;">
-                <h3>Tinggi badan (cm)</h3>
-                <input type="number">
-            </div>
-<!----------------------------------Button--------------------------------------->  
-            <div class="form-btn-container">
-                <button class="button bg-hitungBMI">Hitung BMI</button>
-                <button class="button bg-reset">Reset</button>
-            </div>
-       
+        </div>
+ <!----------------------------------Button--------------------------------------->  
+          <div class="result">
+            <h1 class="hasil-bmi">Hasil BMI kamu</h1>
+            <div id="result">00.00</div>
+            <p class="comment" style="
+            position:absolute;
+            margin-top: 230px;
+            "></p>
           </div>
-          <div class="content">
-            <h1 style="
-            font-size: 23px;
-            padding: 20px;
-            ">Hasil BMI kamu</h1>
           </div>
-
-<!----------------------------------Reminder--------------------------------------->
-         <!---- <div class="reminder">
-            <h1>Reminder!</h1>
-          </div>  -->
         </div>
 <!----------------------------------Form Informasi--------------------------------------->
         <div class="row">
@@ -243,6 +149,8 @@
         <h3 style="font-size: 15px;
         ">Made by: Muhammad Rafi Novandi</h3>
       </footer>
+
+      <script src="js\script.js"></script>
 
 </body>
 </html>
