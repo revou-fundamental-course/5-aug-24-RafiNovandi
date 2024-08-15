@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        *{
+            padding: 2;
+            margin: 0;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        table{
+            width: 100%;
+            margin: 30px;
+            
+        }
+        th,
+        td{
+            border: 2px solid #525E51;
+            padding: 20px;
+        }
+        th{
+            background-color: #CCE2CB;
+            text-align: center;
+        }
+
+        tr:first-child th:first-child{
+            border-top-left-radius: 20px;
+        }  
+    </style>
 </head>
+
+
 <body>
-    <header>
+    <!-- <header>
         <h1>Kalkulator BMI</h1>
     </header>
 
@@ -72,6 +101,148 @@
 
     <footer>
         <p>Made By: Muhammad Rafi Novandi</p>
-    </footer>
+    </footer> -->
+
+<!----------------------------------Judul--------------------------------------->
+   <div class="container">
+        <div class="row">
+          <div class="header">
+            <h1>Kalkulator BMI</h1>
+          </div>
+        </div>
+<!----------------------------------Kalkulator BMI--------------------------------------->
+        <div class="row">
+          <div class="sidebar">
+            <div>
+                <h3 style="
+                margin-top: 10px;
+                margin-bottom: 15px;
+
+                ">Jenis Kelamin:<h3>
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
+                <label for="laki-laki">Laki-Laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                <label for="perempuan">Perempuan</label>
+            </div>
+
+            <div style="
+            align-items: safe;
+            margin-top: 25px;
+            ">
+                <h3>Berat badan (kg)</h3>
+                <input type="number">
+            </div>
+
+            <div style="margin-top: 20px;">
+                <h3>Usia (tahun)</h3>
+                <input type="number">
+            </div>
+
+            <div style="margin-top: 20px;">
+                <h3>Tinggi badan (cm)</h3>
+                <input type="number">
+            </div>
+<!----------------------------------Button--------------------------------------->  
+            <div class="form-btn-container">
+                <button class="button bg-hitungBMI">Hitung BMI</button>
+                <button class="button bg-reset">Reset</button>
+            </div>
+       
+          </div>
+          <div class="content">
+            <h1 style="
+            font-size: 23px;
+            padding: 20px;
+            ">Hasil BMI kamu</h1>
+          </div>
+
+<!----------------------------------Reminder--------------------------------------->
+         <!---- <div class="reminder">
+            <h1>Reminder!</h1>
+          </div>  -->
+        </div>
+<!----------------------------------Form Informasi--------------------------------------->
+        <div class="row">
+          <div class="form-informasi">
+            <h1 style="
+            font-size: 23px;
+            margin: 30px;
+            ">Form Infrormasi</h1>
+<!----------------------------------Table--------------------------------------->
+            <table style="
+            position: absolute;
+            padding: 50px;
+            ">
+                <tr>
+                    <th style="
+                    background-color: #525E51;
+                    color: white;
+                    font-weight: 500;
+                    font-style: normal;
+                    ">Index Masa Tubuh </th>
+                    <th style="
+                    background-color: #525E51;
+                    border-top-right-radius: 20px;
+                    color: white;
+                    font-weight: 500;
+                    font-style: normal;
+                    ">Keterangan</th>
+                </tr>
+                <tr>
+                    <td>-18,5</td>
+                    <th>Kekurangan berat badan</th>
+                </tr>
+                <tr>
+                    <td>18,5-24,9</td>
+                    <th>Berat badan normal</th>
+                </tr>
+                <tr>
+                    <td>25-29,9</td>
+                    <th>Kelebihan berat badan</th>
+                </tr>
+                <tr>
+                    <td style="
+                    border-bottom-left-radius: 20px;
+                    ">>30</td>
+                    <th style="
+                    border-bottom-right-radius: 20px;
+                    ">Obesitas</th>
+                </tr>
+                
+            </table>
+        </div>
+<!----------------------------------Table Penutup--------------------------------------->
+        <div class="row">
+            <div class="apa-itu-bmi">
+              <h1 style="
+              font-size: 23px;
+              position: absolute;
+              padding: 40px;
+              margin-top: 6px;
+              margin-left: 30px;
+
+              ">Apa itu BMI?</h1>
+
+              <div style="
+              position: absolute;
+              padding: 40px;
+              margin: 30px;
+              margin-top: 60px;
+              ">
+                <h4 style="margin-bottom: 20px;">Menjaga berat badan merupakan salah satu kunci utama untuk mempunyai tubuh yang sehat dan bugar. Namun pertanyaannya, bagaimana cara mengetahui berat badan ideal? Well, body mass index adalah parameter yang bisa Anda coba.<h4/>
+                <h4 style="margin-bottom: 20px;">Body Mass Indexing atau BMI adalah suatu metode pengukuran yang digunakan untuk menentukan kategori berat badan ideal seseorang.</h4>
+                <h4 style="margin-bottom: 20px;">Metode perhitungan ini awalnya dikembangkan pada abad 19 oleh Adolphe Quetelet . Adapun istilah lain dalam menyebut BMI adalah indeks massa tubuh (IMT).</h4>
+                <h4 style="margin-bottom: 20px;">Melalui perhitungan rumus BMI tersebut, Anda pun dapat mengetahui apakah Anda sudah memiliki berat tubuh yang ideal atau tidak. Di sisi lain, BMI adalah pengukuran yang bisa dijadikan sebagai metode skrining terhadap berbagai masalah kesehatan .</h4>
+                <h4 style="margin-bottom: 20px;">Sebab, hasil perhitungan BMI yang tinggi menunjukkan adanya kemungkinan sejumlah risiko penyakit, seperti tekanan darah tinggi, diabetes, kardiovaskular, serta beberapa jenis kanker .</h4>
+            </div>
+
+          </div>
+      </div>
+    
+      <footer style="text-align: center;">
+        <h3 style="font-size: 15px;
+        ">Made by: Muhammad Rafi Novandi</h3>
+      </footer>
+
 </body>
 </html>
